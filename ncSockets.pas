@@ -674,7 +674,7 @@ begin
     try
       TncLineInternal(Line).SetReceiveSize(1048576); // 1MB
       TncLineInternal(Line).SetWriteSize(1048576); // 1MB
-      //TncLineInternal(Line).SetReceiveSize(20 * 1048576);
+      TncLineInternal(Line).SetReceiveSize(20 * 1048576);
 
     except
     end;

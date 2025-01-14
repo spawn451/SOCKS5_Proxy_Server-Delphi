@@ -86,7 +86,7 @@ A lightweight and efficient SOCKS5 proxy server implementation in Delphi using t
    - You must replace the original ncSockets.pas with the one provided in the Netcom7 folder.
    - I made changes in :
       - TncCustomTCPServer.DataSocketDisconnected
-      - Created a class variable to allow customizing 
+      - Created a new property to allow customizing 
 the read buffer size
 
 Optional: You can also replace the ncLines.pas (corrected version allowing compilation on Linux)
