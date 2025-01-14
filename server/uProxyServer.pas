@@ -523,8 +523,6 @@ begin
 
     Context.TargetPort := (aBuf[I] shl 8) or aBuf[I + 1];
 
-    TncTCPBase.DefaultReadBufferLen := 8192;
-
     Context.TargetClient := TncTCPClient.Create(nil);
 
     with Context.TargetClient do
@@ -541,6 +539,7 @@ begin
       EventsUseMainThread := False;
       Host := Context.TargetHost;
       Port := Context.TargetPort;
+      ReadBufferLen := 8192;
     end;
 
     // Update connection state
